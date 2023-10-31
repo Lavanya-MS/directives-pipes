@@ -1,0 +1,10 @@
+<h2>Custom Pipe Example</h2>
+
+<p>{{ 'Hello World' | custom }}</p><br>
+
+
+<!-- Custom Pipe with Parameters -->
+<h2>Custom Pipe with Parameters</h2>
+<p>Original number: {{ myNumber }}</p>
+<p>{{ myNumber }} Multiplied by 2: {{ myNumber | parametrizedCustom:2 }}</p>
+<p>{{ myNumber }} Multiplied by 10: {{ myNumber | parametrizedCustom:10 }}</p>

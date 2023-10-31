@@ -1,0 +1,51 @@
+<h1>Examples of Attribute Directives</h1>
+<h3>Simple NgClass Example</h3>
+
+<div [ngClass]="{ 'special-style': applySpecialStyle }">
+    This content has a special style when applySpecialStyle is true.
+  </div>
+
+<h3>Multiple NgClass Example</h3>
+
+  <div [ngClass]="{ 'class1': applyClass1, 'class2': applyClass2 }">
+    This content may have class1 or class2 based on conditions.
+  </div>
+  
+<h3>Applying NgClass Dynamically Example</h3> 
+
+<div [ngClass]="getColor(true)">
+    This content has the 'red' class.
+  </div>
+
+<h3>Applying Classes from an Object</h3>   
+
+  <div [ngClass]="classObject">
+    This content will have classes based on the classObject conditions.
+  </div>
+
+<h3>Applying multiple classes based on an array</h3>  
+
+<div [ngClass]="classesToApply">
+    This content will have 'class1' and 'class2' applied.
+</div><br> <br><br>
+
+  
+  <h3>NgStyle Examples</h3>
+  <div [ngStyle]="{ 'background-color': applyCustomStyle ? 'yellow' : 'transparent' }">
+    This content has a yellow background when applyCustomStyle is true.
+  </div><br>
+
+  <div [ngStyle]="customStyle">
+    This content has multiple styles applied.
+  </div><br>
+
+  <div [ngStyle]="getDynamicStyle(true)">
+    This content has dynamic styles based on the condition.
+  </div><br/><br>
+
+
+  
+  
+  
+  
+  

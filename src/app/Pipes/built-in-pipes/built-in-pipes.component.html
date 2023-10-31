@@ -1,0 +1,40 @@
+<h1>Built-In-Pipes Examples</h1><br>
+<h3>Uppercase Pipe Example</h3>
+
+
+<!-- Using the 'uppercase' pipe -->
+<p><b>Before:</b> {{ 'Hello, Angular!'}}</p>
+<p><b>After:</b> {{ 'Hello, Angular!' | uppercase }}</p><br>
+
+
+<!-- Using the 'lowercase' pipe -->
+<h3>Lowercase Pipe Example</h3>
+<p><b>Before:</b>{{ 'Hello, Angular!' }}</p>
+<p><b>After:</b> {{ 'Hello, Angular!' | lowercase }}</p><br>
+
+<!-- Chaining pipes: Uppercase and Slice -->
+<h3>Uppercase and Slice Example</h3>
+<p>{{ 'Welcome to Angular Pipes' | uppercase | slice:0:7 }}</p><br>
+
+
+<!-- Using the 'date' pipe with parameters -->
+<h3>Date Pipe Example</h3>
+<p>{{ currentDate | date:'fullDate' }}</p><br>
+
+<!-- Currency Pipe Example -->
+<h3>Currency Pipe Example</h3>
+<p>Formatted amount using currency pipe: {{ amount | currency }}</p>
+<p>Amount with USD currency symbol: {{ amount | currency:'USD' }}</p>
+<p>Amount with currency code and symbol: {{ amount | currency:'EUR':'symbol' }}</p>
+<p>Amount with currency code and display style: {{ amount | currency:'GBP':'code':'4.2-2' }}</p><br>
+
+<!-- Decimal Pipe Example -->
+<h3>Decimal Pipe Example</h3>
+<p>Formatted number with default precision: {{ piValue | number }}</p>
+<p>Number with specific precision (2 digits): {{ num1 | number:'1.2' }}</p>
+<p>Number with zero padding to the left (3 digits in total): {{ piValue | number:'1.3' }}</p><br>
+
+<!-- Percentage Pipe Example -->
+<h3>Percentage Pipe Example</h3>
+<p>Success Rate: {{ successRate | percent }}</p>
+<p>Improved Success Rate: {{ successRate + 0.15 | percent }}</p>

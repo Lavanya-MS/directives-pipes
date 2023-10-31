@@ -1,0 +1,65 @@
+<h1 style="color: black;">Examples of Structural Directives</h1>
+
+<!-- ngIf example -->
+<h2>NgIf Example</h2>
+<p *ngIf="isLoggedIn">Hey {{name}} you are Logged In</p>
+<p *ngIf="!isLoggedIn" class="error">Something went wrong..Try again</p>
+
+<button (click)="changeState()" class="change">ChangeState</button>
+
+
+
+<!-- ngFor Example -->
+<h2>NgFor Example</h2>
+<ul>
+  <li *ngFor="let item of ProductList">
+    {{ item }}
+  </li>
+</ul>
+
+<!-- ngFor and ngIf Example-->
+
+<h2>NgFor and NgIf Example</h2>
+<ul *ngFor="let person of people">
+  <li *ngIf="person.age < 30">
+    {{ person.name }} ({{ person.age }})
+  </li>
+</ul>
+
+<!-- NgSwitch Example -->
+
+<h2>NgSwitch Example</h2>
+
+<h1>Hey! Good Morning </h1>
+
+<div [ngSwitch]="Day">
+
+  <div *ngSwitchCase=0>Today is Sunday! You deserve a break</div>
+
+  <div *ngSwitchCase='1'>
+    <h3>Today is Monday, Hope you have productive Week</h3>
+  </div>
+
+  <div *ngSwitchCase='2'>
+    <h3>Today is Tuesday, Smash your Goals</h3>
+  </div>
+
+  <div *ngSwitchCase='3'>
+    <h3>Today is Wednesday, You're already half way through</h3>
+  </div>
+
+  <div *ngSwitchCase='4'>
+    <h3>Today is Thursday, It's like Friday Lite</h3>
+  </div>
+
+  <div *ngSwitchCase='5'>
+    <h3>Today is Friday, TGIF!!!</h3>
+  </div>
+
+  <div *ngSwitchCase='6'>
+    <h3>Today is Saturday, Let's Party!! :) </h3>
+  </div>
+
+  <div *NgSwitchDefault>Uh oh! Somethings wrong</div>
+
+</div>
